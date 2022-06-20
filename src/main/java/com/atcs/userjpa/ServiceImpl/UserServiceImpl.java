@@ -10,6 +10,7 @@ import com.atcs.userjpa.Service.UsersService;
 import com.atcs.userjpa.entity.User_profilesEntity;
 import com.atcs.userjpa.entity.UsersEntity;
 import com.atcs.userjpa.repo.UsersRepo;
+
 @Component
 public class UserServiceImpl implements UsersService {
 
@@ -70,6 +71,7 @@ public class UserServiceImpl implements UsersService {
 
 	private boolean checkPassword(String password) {
 		String passRegex="^(?=.*[@$!%*#?&])(?=.*[a-zA-Z]).{10,}$";
+		
 				Pattern pat = Pattern.compile(passRegex); 
 		  if (password == null)
 		   return false;

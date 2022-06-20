@@ -35,7 +35,7 @@ public class User_profilesEntity {
 	
 	//dob logic
 	@Column
-	String dob;
+	Date dob;
 	
 	@Column
 	String gender;
@@ -102,11 +102,11 @@ public class User_profilesEntity {
 		this.country = country;
 	}
 
-	public String getDob() {
+	public Date getDob() {
 		return dob;
 	}
 
-	public void setDob(String dob) {
+	public void setDob(Date dob) {
 		this.dob = dob;
 	}
 
@@ -158,7 +158,7 @@ public class User_profilesEntity {
 		this.user = user;
 	}
 
-	public User_profilesEntity(long id, String add1, String add2, String city, String country, String dob, String gender,
+	public User_profilesEntity(long id, String add1, String add2, String city, String country, Date dob, String gender,
 			String phoneNo, String state, String street, String zipcode, UsersEntity user) {
 		super();
 		this.id = id;
